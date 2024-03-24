@@ -3,7 +3,7 @@ local group = vim.api.nvim_create_augroup("ScratchBuffer", {  clear = true })
 local function create_buffer() 
 	local buffer = vim.api.nvim_create_buf(true, true)
 	vim.api.nvim_buf_set_name(buffer, "*scratch*")
-	vim.apo.nvim_set_option_value("filetype", "rust", {buf = buffer})
+	vim.apo.nvim_set_option_value("filetype", "lua", {buf = buffer})
 	return buffer
 end
 
