@@ -9,7 +9,7 @@ end
 
 local function main()
 	print("Hellow")
-	local buf create_buffer()
+	local buf = create_buffer()
 
 	vim.api.nvim_buf_set_lines(buf, 0, -1, true, {"-- Welcome to Neovim!", "" })
 	vim.api.nvim_win_set_buf(0, buf)
