@@ -1,6 +1,6 @@
 local group = vim.api.nvim_create_augroup("ScratchBuffer", {  clear = true })
 
-local function main() {
+local function main()
 	print("Hellow")
 end
 
